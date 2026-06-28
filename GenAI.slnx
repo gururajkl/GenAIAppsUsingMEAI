@@ -1,4 +1,5 @@
 <Solution>
+  <Project Path="ChatAppRAG/ChatAppRAG.csproj" />
   <Project Path="Embeddings/Embeddings.csproj" Id="887a8a7d-bfc7-4829-9e83-37dc05872e20" />
   <Project Path="TextCompletion/TextCompletion.csproj" />
   <Project Path="TextCompletionOllama/TextCompletionOllama.csproj" Id="2c2a5652-b217-4ef1-9d7a-a42d9b8fe0e2" />
