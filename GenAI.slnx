@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="Embeddings/Embeddings.csproj" Id="887a8a7d-bfc7-4829-9e83-37dc05872e20" />
+  <Project Path="TextCompletion/TextCompletion.csproj" />
+  <Project Path="TextCompletionOllama/TextCompletionOllama.csproj" Id="2c2a5652-b217-4ef1-9d7a-a42d9b8fe0e2" />
+  <Project Path="VectorSearch/VectorSearch.csproj" Id="bea513b5-3c57-4330-bcd5-327008ebc2c6" />
+  <Project Path="VectorSearchOllama/VectorSearchOllama.csproj" Id="b776fa02-2467-4399-84f2-e584ff4524f5" />
+</Solution>
