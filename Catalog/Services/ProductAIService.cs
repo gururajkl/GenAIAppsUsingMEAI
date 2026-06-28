@@ -3,15 +3,12 @@ using Microsoft.Extensions.VectorData;
 
 namespace Catalog.Services;
 
-public class ProductAIService(
-    IChatClient chatClient,
-    IEmbeddingGenerator<string, Embedding<float>> embeddingGenerator,    
-    VectorStoreCollection<ulong, ProductVector> productVectorCollection,    
-    CatalogDbContext dbContext
+public class ProductAIService(IChatClient chatClient, IEmbeddingGenerator<string, Embedding<float>> embeddingGenerator,
+    VectorStoreCollection<ulong, ProductVector> productVectorCollection, CatalogDbContext dbContext
     )
-{    
+{
     public async Task<string> SupportAsync(string userQuery, CancellationToken cancellationToken = default)
-    {        
+    {
         var products = await dbContext.Products
             .AsNoTracking()
             .Select(p => new { p.Id, p.Name, p.Price })
@@ -88,7 +85,7 @@ public class ProductAIService(
         await foreach (var resultItem in results)
         {
             products.Add(new Product
-            {                
+            {
                 Id = (int)resultItem.Record.Id,
                 Name = resultItem.Record.Name,
                 Description = resultItem.Record.Description,
