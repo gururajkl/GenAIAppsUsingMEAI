@@ -46,3 +46,11 @@ Content-Type: application/json
 ### Traditional Search
 GET {{Catalog_HostAddress}}/products/search/Hiking
 Accept: application/json
+
+### AI Search
+GET {{Catalog_HostAddress}}/products/aisearch/Something_for_rainy_days
+Accept: application/json
+
+### Support AI
+GET {{Catalog_HostAddress}}/products/support/offer_me_1_outdoor_campaign
+Accept: application/json
